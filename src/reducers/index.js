@@ -2,7 +2,7 @@ import { CREATE_EVENT } from '../actions';
 import { DELETE_EVENT } from '../actions';
 import { DELETE_ALL_EVENTS } from '../actions';
 
-const events = (state=[], action) => {
+const events = (state = [], action) => {
   switch(action.type) {
     case CREATE_EVENT:
       const event = { title: action.title, body: action.body }
